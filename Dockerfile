@@ -21,5 +21,6 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
+# REFERENCE: re-using snippet from previous exercise, since directly applicable
 CMD ["python", "app.py"]
 
