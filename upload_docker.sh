@@ -11,13 +11,13 @@ dockerpath=bencdr/path
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login 
-docker tag mlapp:latest bncdr0/udacitymicroservices:latest
+docker tag mlapp:latest bencdr0/mlapponline:latest # according to docker standard documentation
 docker image ls
 
 # Step 3:
 # Push image to a docker repository
-# according to cheat-sheet
-docker push bncdr0/udacitymicroservices:latest
+# according to cheat-sheet and standard documentation
+docker push bencdr0/mlapponline:latest
 docker logout
 
 
