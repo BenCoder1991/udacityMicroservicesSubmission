@@ -4,15 +4,22 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=<>
+dockerpath="bencdr0/mlapponline"
+
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl run mlapp\
+    #--generator=run-pod/v1\ # outdated, no longer needed
+    --image=$dockerpath\
+    --port=80 --labels app=mlapp
 
 # Step 3:
 # List kubernetes pods
+kubectl get pods
+
 
 # Step 4:
 # Forward the container port to a host
+kubectl port-forward mlapp 8000:80
 
