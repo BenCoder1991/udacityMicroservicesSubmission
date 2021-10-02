@@ -9,10 +9,7 @@ dockerpath="bencdr0/mlapponline"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run mlapp\
-    #--generator=run-pod/v1\ # outdated, no longer needed
-    --image=$dockerpath\
-    --port=80 --labels app=mlapp
+kubectl run mlapp --image=$dockerpath --port=80 --labels app=mlapp
 
 # Step 3:
 # List kubernetes pods
