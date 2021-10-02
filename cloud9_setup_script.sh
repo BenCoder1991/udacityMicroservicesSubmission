@@ -4,15 +4,9 @@
 python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 
-# install dependencies from requirements file:
-make install
-
-# setup hadolint (sudo chmod in order to make it running on cloud9)
-sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.7.0/hadolint-Linux-x86_64
+# setup hadolint (sudo chmod in order to make it running on cloud9) - this circumvents "sudo" issues within circleci
+sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 
 sudo chmod +x /bin/hadolint
-
-# linting
-make lint
 
 # Cloud 9 only: re-using the standard re-size script to increase hard disk space
 # Reference: https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html
