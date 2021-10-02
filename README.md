@@ -40,3 +40,5 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+# Notes: as recommended by the mentor I additionally included pylint in requirements file as suggested as well as adding an additional hadolint installation within the Makefile
