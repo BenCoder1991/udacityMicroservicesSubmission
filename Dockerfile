@@ -12,9 +12,10 @@ COPY . app.py /app/
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
+# hadolint ignore=DL3042
 # REFERENCE: re-using snippet from previous exercise, since directly applicable
 RUN pip install --upgrade pip &&\
-    pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
+    pip install --trusted-host pypi.python.org -r requirements.txt
 
 ## Step 4:
 EXPOSE 80
