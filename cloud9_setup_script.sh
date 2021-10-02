@@ -1,6 +1,5 @@
-# This script is written to accelerate and standardized the prescribed setup in cloud9 envrionments (specs: t3.medium, amazon linux, resizing hard disk to 20 GB)
-
-# setup and activate virtual environment
+# This script is written to accelerate and standardized the prescribed setup in cloud9 envrionments 
+# (specs: t3.medium, amazon linux, resizing hard disk to 20 GB)
 python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 
@@ -14,7 +13,7 @@ sudo chmod +x /bin/hadolint
 
 # Installing minikube according to standard documentation:
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 # Installing and verifying kubectl according to standard documentation: 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"

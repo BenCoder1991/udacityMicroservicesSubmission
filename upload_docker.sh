@@ -5,19 +5,19 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=bencdr/path
+dockerpath="bencdr0/mlapponline"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login 
-docker tag mlapp:latest bencdr0/mlapponline:latest # according to docker standard documentation
+docker tag mlapp:latest $dockerpath:latest # according to docker standard documentation
 docker image ls
 
 # Step 3:
 # Push image to a docker repository
 # according to cheat-sheet and standard documentation
-docker push bencdr0/mlapponline:latest
+docker push $dockerpath:latest
 docker logout
 
 
