@@ -1,3 +1,6 @@
+# Reference: this script is provided by AWS under 
+# https://docs.aws.amazon.com/cloud9/latest/user-guide/move-environment.html
+
 #!/bin/bash
 
 # Specify the desired volume size in GiB as a command line argument. If not specified, default to 20 GiB.
