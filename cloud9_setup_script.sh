@@ -1,7 +1,5 @@
 # This script is written to accelerate and standardized the prescribed setup in cloud9 envrionments 
 # (specs: t3.medium, amazon linux, resizing hard disk to 20 GB)
-python3 -m venv ~/.devops
-source ~/.devops/bin/activate
 
 # setup hadolint (sudo chmod in order to make it running on cloud9) - this circumvents "sudo" issues within circleci
 sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 
