@@ -18,7 +18,6 @@
 The following steps are necessary, however on cloud9 you can easily use the file `cloud9_setup_script` (1) to ensure this.
 * Create a virtualenv and activate it (this project assumes python3 -m venv ~/.devops). This environment is to be activated for all subsequent steps.
 * Run `make install` to install the necessary dependencies
-* Install hadolint
 * If cloud9 and low disk space, run `./resize.sh` (may require `chmod +x resize.sh`)
 * Install minikube as in (1)
 * Install kubectl as in (1)

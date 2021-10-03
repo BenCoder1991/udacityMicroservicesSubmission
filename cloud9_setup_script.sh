@@ -9,10 +9,6 @@ source ~/.devops/bin/activate
 
 make install
 
-# setup hadolint (sudo chmod in order to make it running on cloud9) - this circumvents "sudo" issues within circleci. Reference: as given in project files (e.g. .circleci/config.yml)
-sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 
-sudo chmod +x /bin/hadolint
-
 # running the linting checks
 make lint
 
