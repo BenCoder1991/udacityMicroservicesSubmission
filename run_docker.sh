@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 ## Complete the following steps to get Docker running locally
+## Reference: https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf
 
 # Step 1:
 docker build --tag=mlapp .

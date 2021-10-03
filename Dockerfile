@@ -1,3 +1,4 @@
+# Reference: Lesson 2, part 7 
 FROM python:3.7.3-stretch
 
 ## Step 1:

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # This tags and uploads an image to Docker Hub
+## Reference: Lesson 4, part 6 and https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 # Step 1:
 # This is your Docker ID/path
 dockerpath="bencdr0/mlapponline"
-
 
 # Step 2
 # Run the Docker Hub container with kubernetes
