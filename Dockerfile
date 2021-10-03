@@ -1,4 +1,4 @@
-# Reference: Lesson 2, part 7 
+# Reference: Lesson 2, part 7 and Lesson 3, part 2
 FROM python:3.7.3-stretch
 
 ## Step 1:
