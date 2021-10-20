@@ -25,7 +25,7 @@ The following steps are necessary, however on cloud9 you can easily use the file
 * (Optional) run all the steps in the Makefile at once, run: `make all`
 
 ## 2.b. Containerize and run the application
-* Run `./docker.sh` to build the app with the tag "mlapp", list all images, run the container in Docker
+* Run `./run_docker.sh` to build the app with the tag "mlapp", list all images, run the container in Docker
 * To query the applicaiton, run `./make_prediction.sh` in a separate terminal window
 * (Optional) Once you want to stop, press `Ctrl+C` 
 * Upload the docker image  for later use to Docker Hub via: `./upload_docker.sh`
@@ -33,6 +33,10 @@ The following steps are necessary, however on cloud9 you can easily use the file
     * run `minikube start` in your terminal
     * run `./run_kubernetes.sh` 
     * query the application vai `./make_prediction.sh`  in a separate terminal
+    * NEW: as discussed here, the docker output seems faulty (it does not display the actual output in cloud9), c.f.
+    * ... https://knowledge.udacity.com/questions/79267 I have followed the suggestion and displayed the logs for kubernetes 
+    * ... (I have tried increasing resources, used pyhtonunbuffered etc. none of it worked) 
+    * ... therefore the output in the respective file stems from the command kubectl `kubectl logs mlapp`.
     * run `minikube delete` in your terminal
 
 ## 3. Explanation of all files
